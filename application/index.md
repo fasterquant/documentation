@@ -6,7 +6,7 @@ The FasterQuant Application is a console application which uses the FasterQuant 
 - [Random Trade Backtest Runner](#Random-Trade-Backtest-Runner)
 - [Order Optimization Runner](#Order-Optimization-Runner)
 - [Portfolio Optimization Runner](#Portfolio-Optimization-Runner)
-- [Portfolio Bactest Runner](#Portfolio-Backtest-Runner)
+- [Portfolio Backtest Runner](#Portfolio-Backtest-Runner)
 - [Portfolio Code Generator Runner](#Portfolio-Code-Generator-Runner)
 
 ## Edge Test Runner
