@@ -32,7 +32,7 @@ The Edge Test Runner is designed to discover, test and filter strategies on in a
 | RequiredKeys | int array | Indicates which keys are required from the StrategyConditionConfiguration collection when building StrategyConditionConfiguration combinations when generating the strategies from the TargetSymbol.  |
 | OutputFolder | string | The relative path location to write the Edge Test output. |
 | OrderBuilderHandlers | List of IOrderBuilderHandler arrays | Multiple collections of IOrderBuilderHandler can be used. |
-| TradingHours | TradingHours | The trading hours used by the strategy. |
+| ExchangeTradingHoursType | ExchangeTradingHoursType | Enumeration indicating the exchange trading hours used by the strategies ("Regular" or "Extended"). |
 | DateRangeConfigurations | DateRangeConfiguration array | Defines the date ranges and corresponding strategy filters to use to test the strategies. NOTE: The first DateRangeConfiguration is used on the TrainingSymbols.  Subsequent DateRangeConfigurations will be used on the OutOfSampleSymbols |
 
 ## Random Trade Backtest Runner
@@ -56,7 +56,7 @@ The Random Trade Backtest Runner will run N number of bactests against a defined
 | LimitTrades | bool | Setting true will prevent a strategy from having two concurrent positions for the same symbol. |
 | OutputFolder | string | The relative path location to write the Edge Test output. |
 | OrderBuilderHandlers | IOrderBuilderHandler array | Defines the exit criteria for the backtests. |
-| TradingHours | TradingHours | The trading hours used by the strategy. |
+| ExchangeTradingHoursType | ExchangeTradingHoursType | Enumeration indicating the exchange trading hours used by the strategies ("Regular" or "Extended"). |
 | DateRange | DateRange | Defines the date range to test the strategies on. |
 
 
@@ -75,14 +75,12 @@ The Order Optimization Runner tests different Order Combinations on the strategi
 | Symbols | string array | The symbols in which the strategies are tested on. |
 | TargetTimeFrame | TimeFrameConfiguration | The timeframe in which trades are executued on. |
 | HigherTimeFrames | TimeFrameConfiguration array | The higher timeframes used by the tested strategies. |
-| Symbols | string array | The symbols in which the strategies are tested on. |
-| TradeType | TradeType | Enumeration indicating the trade type ("Long" or "Short") |
 | LimitTrades | bool | Setting true will prevent a strategy from having two concurrent positions for the same symbol. |
 | DefinitionFolder | string | The relative path to the location of the corresponding Edge Test output. |
 | OutputFolder | string | The relative path location to write the Order Optimization output. |
 | OrderBuilderHandlers | List of IOrderBuilderHandler arrays | Multiple collections of IOrderBuilderHandler which are used to create IOrderBuilderHandler combinations. |
 | RequiredKeys | int array | Indicates which keys are required from the IOrderBuilderHandler collections.|
-| TradingHours | TradingHours | The trading hours used by the strategy. |
+| ExchangeTradingHoursType | ExchangeTradingHoursType | Enumeration indicating the exchange trading hours used by the strategies ("Regular" or "Extended"). |
 | DateRange | DateRange | Defines the date range to test the strategies on. |
 | StrategyFilters | IResultFilter array | Used to filter the strategies. |
 
@@ -100,6 +98,7 @@ The Portfolio Optimization Runner tests different strategy portfolios from the o
 | ------------- |-------------| ------------|
 | BeginningBalance | double | The beginning account balance for each portfolio backtest. |
 | BenchmarkSymbol | string | The symbol to compare the portfolio backtest to. |
+| CommissionCalculator | ICommissionCalculator | Set to the class that implements the ICommissionCalculator interface which is used for calculating trade commissions. |
 | PortfolioName | string | The name of the portfolio script that will be displayed in AlgoTerminal. The name will be appended by a numeric value indicating the portfolio number. |
 | RiskName | string | The name of the risk management script that will be displayed in AlgoTerminal. The name will be appended by a numeric value indicating the portfolio number. |
 | DefinitinFolders | string array | The relative base paths containing the Order Optimization output. |
@@ -112,7 +111,6 @@ The Portfolio Optimization Runner tests different strategy portfolios from the o
 | PortfolioStrategyMaxPositions | PortfolioMaxPositions array | Used to set maximum positions for one or more strategies. |
 | PortfolioStrategyGroupMaxPositions | PortfolioMaxPositions array | Used to set maximum positions for one or more strategy groups. |
 | TradeAllocationPercentage | double | The maximum account percentage that can be allocated to a single trade. |
-| TradingHours | TradingHours | The trading hours used by the BenchmarkSymbol. |
 | DateRange | DateRange | Defines the date range to test the portfolio on. |
 | PortfolioStrategyFilters | List of PortfolioStrategyFilters arrays | Multiple collections of PortfolioStrategyFilters which are used to create PortfolioStrategyFilters combinations.  Each combination is built with different strategy result filters resulting in different strategy portfolios.  |
 | PortfolioFilters | IResultFilter array | Used to filter the portfolios.  |
@@ -135,13 +133,13 @@ The only properties that have to be updated in the config file are the Definitio
 | ------------- |-------------| ------------|
 | BeginningBalance | double | The beginning account balance for each portfolio backtest. |
 | BenchmarkSymbol | string | The symbol to compare the portfolio backtest to. |
+| CommissionCalculator | ICommissionCalculator | Set to the class that implements the ICommissionCalculator interface which is used for calculating trade commissions. |
 | DefinitinFolder | string | The relative path location containing the portfolio output. |
 | LimitTrades | bool | Setting true will prevent a strategy from having two concurrent positions for the same symbol. |
 | OutputFolder | string | The relative path location to write the portfolio backtest output. |
 | StrategyConfigurations | StrategyConfiguration array | The strategies for the portfolio backtest. |
 | StrategyGroupsMaxPositions | StrategyGroupMaxPositions array | Defines the max positions for groups of strategies. |
 | PortfolioStrategyGroupMaxPositions | PortfolioMaxPositions array | Used to set maximum positions for one or more strategy groups. |
-| TradingHours | TradingHours | The trading hours used by the BenchmarkSymbol. |
 | DateRange | DateRange | Defines the date range to test the portfolio on. |
 
 ## Portfolio Code Generator Runner
