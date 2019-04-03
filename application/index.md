@@ -110,7 +110,6 @@ The Portfolio Optimization Runner tests different strategy portfolios from the o
 | ResultOutputCount | int | The number of portfolios to output. |
 | PortfolioStrategyMaxPositions | PortfolioMaxPositions array | Used to set maximum positions for one or more strategies. |
 | PortfolioStrategyGroupMaxPositions | PortfolioMaxPositions array | Used to set maximum positions for one or more strategy groups. |
-| TradeAllocationPercentage | double | The maximum account percentage that can be allocated to a single trade. |
 | DateRange | DateRange | Defines the date range to test the portfolio on. |
 | PortfolioStrategyFilters | List of PortfolioStrategyFilters arrays | Multiple collections of PortfolioStrategyFilters which are used to create PortfolioStrategyFilters combinations.  Each combination is built with different strategy result filters resulting in different strategy portfolios.  |
 | PortfolioFilters | IResultFilter array | Used to filter the portfolios.  |
