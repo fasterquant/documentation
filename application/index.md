@@ -104,12 +104,11 @@ The Portfolio Optimization Runner tests different strategy portfolios from the o
 | DefinitinFolders | string array | The relative base paths containing the Order Optimization output. |
 | GenerateCode | bool | Setting true will generate AlgoTerminal source code. |
 | LimitTrades | bool | Setting true will prevent a strategy from having two concurrent positions for the same symbol. |
-| MaxRiskPercentagePerTrade | double | The maximum amount of the account balance to risk per trade. |
 | StrategySameTradePercentageThreshold | double | Used to combine similar strategies in a collection where the best one will eventually be selected to add into the portfolio. |
 | OutputFolder | string | The relative path location to write the Portfolio Optimization output. |
 | ResultOutputCount | int | The number of portfolios to output. |
-| PortfolioStrategyMaxPositions | PortfolioMaxPositions array | Used to set maximum positions for one or more strategies. |
-| PortfolioStrategyGroupMaxPositions | PortfolioMaxPositions array | Used to set maximum positions for one or more strategy groups. |
+| PortfolioStrategyRiskConfigurations | PortfolioStrategyRiskConfiguration array | Used to set the risk configurations for strategies. |
+| PortfolioStrategyGroupRiskConfigurations | PortfolioStrategyGroupRiskConfiguration array | Used to set the risk configurations for strategy groups. |
 | DateRange | DateRange | Defines the date range to test the portfolio on. |
 | PortfolioStrategyFilters | List of PortfolioStrategyFilters arrays | Multiple collections of PortfolioStrategyFilters which are used to create PortfolioStrategyFilters combinations.  Each combination is built with different strategy result filters resulting in different strategy portfolios.  |
 | PortfolioFilters | IResultFilter array | Used to filter the portfolios.  |
