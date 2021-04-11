@@ -53,7 +53,7 @@ Equal
 ### ATR
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Atr, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Atr, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "period": 10
 }
 
@@ -63,9 +63,9 @@ Equal
 ```yaml
 {
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.BollingerBandsLower, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.BollingerBandsLower, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.Close, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Close, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 20,
     "factor": 2
@@ -75,9 +75,9 @@ Equal
 ### Bollinger Bands Upper
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.BollingerBandsUpper, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.BollingerBandsUpper, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.Close, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Close, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 20,
     "factor": 2
@@ -87,9 +87,9 @@ Equal
 ### Exponential Moving Average
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Ema, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Ema, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.Close, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Close, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 10
 }
@@ -98,9 +98,9 @@ Equal
 ### Is Max
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.IsMax, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.IsMax, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.High, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.High, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 20
 }
@@ -109,9 +109,9 @@ Equal
 ### Is Min
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.IsMin, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.IsMin, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.Low, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Low, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 20
 }
@@ -120,7 +120,7 @@ Equal
 ### Is Time In Range
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.IsTimeInRange, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.IsTimeInRange, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "startHour": 8,
     "startMinute": 30,
     "endHour": 15,
@@ -131,51 +131,51 @@ Equal
 ### Open
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Open, FasterQuant.IndicatorInformationsPlugin"
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Open, FasterQuant.StrategyBuilder.Plugin.Indicators"
 }
 ```
 
 ### High
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.High, FasterQuant.IndicatorInformationsPlugin"
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.High, FasterQuant.StrategyBuilder.Plugin.Indicators"
 }
 ```
 
 ### Low
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Low, FasterQuant.IndicatorInformationsPlugin"
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Low, FasterQuant.StrategyBuilder.Plugin.Indicators"
 }
 ```
 
 ### Close
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Close, FasterQuant.IndicatorInformationsPlugin"
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Close, FasterQuant.StrategyBuilder.Plugin.Indicators"
 }
 ```
 
 ### Volume
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Volume, FasterQuant.IndicatorInformationsPlugin"
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Volume, FasterQuant.StrategyBuilder.Plugin.Indicators"
 }
 ```
 
 ### Hlc3
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Hlc3, FasterQuant.IndicatorInformationsPlugin"
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Hlc3, FasterQuant.StrategyBuilder.Plugin.Indicators"
 }
 ```
 
 ### Max
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Max, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Max, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.High, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.High, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 20
 }
@@ -184,9 +184,9 @@ Equal
 ### Min
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Min, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Min, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.Low, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Low, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 20
 }
@@ -195,7 +195,7 @@ Equal
 ### ParabolicSar
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.ParabolicSar, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.ParabolicSar, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "accelerationFactor": 0.02,
     "maxAcceleration": 0.2
 }
@@ -204,9 +204,9 @@ Equal
 ### Relative Strength Index
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Rsi, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Rsi, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.Close, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Close, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 10
 }
@@ -215,9 +215,9 @@ Equal
 ### Simple Moving Average
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.Sma, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Sma, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "indicatorInfo": {
-        "$type": "FasterQuant.IndicatorInformationsPlugin.Low, FasterQuant.IndicatorInformationsPlugin"
+        "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.Low, FasterQuant.StrategyBuilder.Plugin.Indicators"
     },
     "period": 10
 }
@@ -226,7 +226,7 @@ Equal
 ### Stochastic Fast D
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.StochasticFastD, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.StochasticFastD, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "periodsK": 8,
     "periodsD": 3
 }
@@ -235,7 +235,7 @@ Equal
 ### Stochastic Fast K
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.StochasticFastK, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.StochasticFastK, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "periods": 8
 }
 ```
@@ -243,7 +243,7 @@ Equal
 ### Stochastic Full D
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.StochasticFullD, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.StochasticFullD, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "periodsK": 8,
     "smoothPeriodsK": 3,
     "periodsD": 3
@@ -253,7 +253,7 @@ Equal
 ### Stochastic Full K
 ```yaml
 {
-    "$type": "FasterQuant.IndicatorInformationsPlugin.StochasticFullK, FasterQuant.IndicatorInformationsPlugin",
+    "$type": "FasterQuant.StrategyBuilder.Plugin.Indicators.StochasticFullK, FasterQuant.StrategyBuilder.Plugin.Indicators",
     "periods": 8,
     "smoothPeriods": 3
 }
